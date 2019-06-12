@@ -21,6 +21,6 @@ public class FiksniBroj extends TelefonskiBroj {
 
     @Override
     public int hashCode() {
-        return (Integer.parseInt(broj)+5)*7;
+        return (Integer.parseInt(broj) + 5) * 7;
     }
 }
