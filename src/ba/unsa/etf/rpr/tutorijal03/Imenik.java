@@ -46,6 +46,18 @@ public class Imenik {
 
 
     Set<TelefonskiBroj> izGradaBrojevi(FiksniBroj.Grad g) {
+        Set<TelefonskiBroj> set = new TreeSet<>();
+        String pozivni[] = {"030", "031", "032", "033", "034", "035", "036", "037",
+                "038", "039", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058", "059"};
+        String pozivniTemp = pozivni[g.ordinal()];
+        for(Map.Entry<TelefonskiBroj, String> element : mapa.entrySet()) {
+            for(Map.Entry<TelefonskiBroj, String> element : mapa.entrySet()) {
+                if(element.getKey().ispisi().substring(0,2).equals(pozivniTemp)) {
+
+                }
+            }
+        }
+        return set;
 
     }
 
